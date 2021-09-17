@@ -8,11 +8,11 @@ def bubble_sort_by(fig)
         sorted = true
       end
     end
-    break if !sorted
+    break unless !sorted
   end
   fig
 end
-val = bubble_sort_by(%W[hi, hello, hey]) do |left, right|
+val = bubble_sort_by(%W[hi hello hey]) do |left, right|
   left.length - right.length
 end
 print val
