@@ -8,7 +8,7 @@ def bubble_sort(fig)
         sorted = true
       end
     end
-    break if sorted
+    break unless sorted
   end
   fig
 end
